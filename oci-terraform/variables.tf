@@ -16,7 +16,7 @@ variable "tenancy_ocid" {
 }
 variable "region" {
   type        = string
-  default     = ""
+  default     = "eu-frankfurt-1"
   description = "Region in cloud"
 }
 variable "fingerprint" {
@@ -31,16 +31,16 @@ variable "compartment_name" {
 }
 variable "k8s_version" {
   type        = string
-  default     = "v1.23.4"
+  default     = "v1.24.1"
   description = "Kubernetes version"
 }
 variable oci_core_image {
   type        = string
-  default     = "ocid1.image.oc1.eu-frankfurt-1.aaaaaaaaendjqxmyyq2sdw3vulvu3uf3dah465li3iaemabcmacaloza4zjq"
+  default     = "ocid1.image.oc1.eu-frankfurt-1.aaaaaaaaqz3y3bnqusfksz44ysicyikiw6kdhkahjrmvrhubtxwtrfh2onsq"
   description = "oci core image"
 }
 variable oci_node_shape {
   type        = string
-  default     = "VM.Standard.A1.Flex"
+  default     = "VM.Standard3.Flex"
   description = "oci node shape"
 }

@@ -4,4 +4,5 @@ Terraform scripts to provision k8s cluster on Oracle cloud.
 
 ## Prerequisites  
 
-Ocid
+For nodepool different pool images types could be found here https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm
+Images OCID links: https://docs.oracle.com/en-us/iaas/images/all/?search=OKE

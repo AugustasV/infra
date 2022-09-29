@@ -23,7 +23,7 @@ resource "oci_core_subnet" "vcn_private_subnet" {
   cidr_block                 = "10.0.1.0/24"
   route_table_id             = module.vcn.nat_route_id
   security_list_ids          = [oci_core_security_list.private_subnet.id]
-  display_name               = "f${var.name}-private-subnet"
+  display_name               = "${var.name}-private-subnet"
   prohibit_public_ip_on_vnic = true
 }
 
