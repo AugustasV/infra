@@ -16,7 +16,6 @@ resource "oci_core_security_list" "private_subnet" {
     protocol    = "all"
   }
 }
-
 resource "oci_core_subnet" "vcn_private_subnet" {
   compartment_id             = oci_identity_compartment.tf_compartment.id
   vcn_id                     = module.vcn.vcn_id
@@ -26,6 +25,7 @@ resource "oci_core_subnet" "vcn_private_subnet" {
   display_name               = "${var.name}-private-subnet"
   prohibit_public_ip_on_vnic = true
 }
+
 
 resource "oci_core_security_list" "public_subnet" {
   compartment_id = oci_identity_compartment.tf_compartment.id

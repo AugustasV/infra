@@ -1,4 +1,3 @@
-
 resource "oci_containerengine_cluster" "k8s_cluster" {
   compartment_id     = oci_identity_compartment.tf_compartment.id
   kubernetes_version = var.k8s_version
