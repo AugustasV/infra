@@ -1,4 +1,4 @@
-# Infrastructurerere for k
+# Infrastructure for k8s
 
 This repo is created to have infrastructure for kubernetes in one place.
 

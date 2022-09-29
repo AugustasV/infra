@@ -1,7 +1,7 @@
 
 resource "oci_containerengine_cluster" "k8s_cluster" {
   compartment_id     = oci_identity_compartment.tf_compartment.id
-  kubernetes_version = "v1.22.5"
+  kubernetes_version = var.k8s_version
   name               = "${var.name}-cluster"
   vcn_id             = module.vcn.vcn_id
   endpoint_config {
