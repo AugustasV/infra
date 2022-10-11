@@ -1,0 +1,7 @@
+---
+apiVersion: v2
+name: backend
+appVersion: "1.0"
+description: "Main app deployed with mongodb"
+version: 1.1.0
+type: application
