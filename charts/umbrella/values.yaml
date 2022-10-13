@@ -1,4 +1,4 @@
-# Default values for chartTwo.
+# Default values for mongodb.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
@@ -16,7 +16,7 @@ fullnameOverride: ""
 
 serviceAccount:
   # Specifies whether a service account should be created
-  create: true
+  create: false
   # Annotations to add to the service account
   annotations: {}
   # The name of the service account to use.
@@ -83,5 +83,9 @@ affinity: {}
 
 backend:
   enabled: true
+  nameOverride: "backend-backend"
+  fullnameOverride: "backend-backend"
 mongodb:
   enabled: true
+  nameOverride: "mongo-mongodb"
+  fullnameOverride: "mongo-mongodb"

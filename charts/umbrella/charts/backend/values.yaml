@@ -80,3 +80,7 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+backend:
+  enabled: true
+mongodb:
+  enabled: false
